@@ -1,12 +1,12 @@
-#show-place {
+#show-task {
   display: none;
 }
 
-.place {
+.task {
   cursor: pointer;
   color: #0088cc;
 }
 
-.place:hover {
+.task:hover {
   text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-# Places You've Been
+# To Do List
 
 ##### _September 21 2015_
 
@@ -6,13 +6,13 @@
 
 ## Description
 
-Enter places that you have been. Each place can include a couple different properties, such as location, landmarks, time of year, notes, etc. Those properties are displayed when a user clicks on each place.
+Add tasks and mark them complete by adding them to a "completed" list.
 
 ## Setup
 
 * Clone this repository.
 * Open the index.html file in your browser.
-* Start adding contacts via forms provided.
+* Start adding input via forms provided.
 
 ## Technologies Used
 
