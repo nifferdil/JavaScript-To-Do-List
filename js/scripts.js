@@ -1,22 +1,21 @@
 $(document).ready(function() {
 
-  $("form#new-place").submit(function(event) {
-    event.preventDefault();
+  $("form#new-task").submit(function(event) {
+  //  var inputtedTask = $("input#new-task").val();
+    var inputtedTask = $(this).find("input#new-task").val();
 
-    var inputtedTask = $("input#new-task").val();
-    var tasks = { task: inputtedTask };
-
-    list.tasks.each(function(task)
-    $("ul#tasks").append("<li><span class='task'>" + tasks.task + "</span></li>");
-  });
+    $("ul#tasks").append("<li><span class='task'>" + inputtedTask + "</span></li>");
 
 
-  $(".task").last().click(function() {
-    $("#show-task").show();
-    $("#show-task h2").text(newTask);
-    list
-  });
+    $(".task").click(function() {
+
+      $("ul#complete").append("<li><span class='task'>" + inputtedTask + "</span></li>");
+      $(this).remove();
+
+    });
 
   $("input#new-task").val("");
+  event.preventDefault();
+});
 
 });
